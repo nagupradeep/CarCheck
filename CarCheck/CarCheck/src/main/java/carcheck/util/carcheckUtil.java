@@ -10,8 +10,30 @@ import carcheck.base.carcheckBase;
 
 public class carcheckUtil extends carcheckBase {
 
+	
+	public static ArrayList<String> listFiles(String inPut)
+	{
+		ArrayList<String> files = new ArrayList<String>();
+		String filePath = System.getProperty("user.dir");
+			if (inPut == "Input") {
+				filePath = filePath + "\\src\\main\\java\\carcheck\\data\\input\\";
+			} else if (inPut == "Validate")
+			{
+				filePath = filePath + "\\src\\main\\java\\carcheck\\data\\validation\\";
+			}
+		String[] pathNames;
+		File filelist = new File (filePath);
+		pathNames = filelist.list();
+		
+		for (String path : pathNames) {
+			files.add(path);
+		}	
+		return files;
+	}
+	
 	public static File fileOpener(String type, String fileName) throws FileNotFoundException {		
 		String path = System.getProperty("user.dir");
+		
 		if (type == "Input") {
 			path = path + "\\src\\main\\java\\carcheck\\data\\input\\";
 		} else if (type == "Validate")
@@ -23,12 +45,17 @@ public class carcheckUtil extends carcheckBase {
 		}
 	
 	
-	public static ArrayList<String> readInputFile() {		
+	public static ArrayList<String> readInputFile(String folderType) {		
 		ArrayList<String> registrationList = new ArrayList<String>();
 		try {
 			  /*String path = System.getProperty("user.dir");
 		      File fObject = new File(path + "\\src\\main\\java\\carcheck\\data\\input\\car_input.txt");*/
-			  File fObject = fileOpener("Input", "car_input.txt");
+			  ArrayList<String> filesList = new ArrayList<String>();
+			  filesList = listFiles(folderType);
+			  System.out.println("Size of" +  filesList.size() );
+			  for (int lF = 0; lF <  filesList.size(); lF++) {
+				  
+			  File fObject = fileOpener(folderType, filesList.get(lF));
 		      Scanner inputReader = new Scanner(fObject);
 		      String spartial = "";
 		      String partial ="";
@@ -92,7 +119,8 @@ public class carcheckUtil extends carcheckBase {
 		        
 		      }
 		      inputReader.close();
-		    } catch (FileNotFoundException e) {
+		}
+			} catch (FileNotFoundException e) {
 		      System.out.println("An error occurred.");
 		      e.printStackTrace();
 		    }
@@ -141,7 +169,6 @@ public class carcheckUtil extends carcheckBase {
 		return datavalidations;
 	}
 	
+	
 		
-	}
-
-
+}
