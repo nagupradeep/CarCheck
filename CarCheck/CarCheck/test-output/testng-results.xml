@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="2" ignored="0" total="4" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="15321" started-at="2021-10-14T23:38:22 BST" finished-at="2021-10-14T23:38:37 BST">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="15321" started-at="2021-10-14T23:38:22 BST" finished-at="2021-10-14T23:38:37 BST">
+      <class name="carcheck.testcases.vehicleIdentityPageTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:carcheck.testcases.vehicleIdentityPageTest@5d76b067]" name="setup" is-config="true" duration-ms="3132" started-at="2021-10-14T23:38:22 BST" finished-at="2021-10-14T23:38:25 BST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="vehicleTestOne(java.lang.String)[pri:0, instance:carcheck.testcases.vehicleIdentityPageTest@5d76b067]" name="vehicleTestOne" duration-ms="958" started-at="2021-10-14T23:38:25 BST" data-provider="passRegNumbers" finished-at="2021-10-14T23:38:26 BST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[DN09HRM]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- vehicleTestOne -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:carcheck.testcases.vehicleIdentityPageTest@5d76b067]" name="teardown" is-config="true" duration-ms="716" started-at="2021-10-14T23:38:26 BST" finished-at="2021-10-14T23:38:27 BST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:carcheck.testcases.vehicleIdentityPageTest@5d76b067]" name="setup" is-config="true" duration-ms="1840" started-at="2021-10-14T23:38:27 BST" finished-at="2021-10-14T23:38:29 BST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="FAIL" signature="vehicleTestOne(java.lang.String)[pri:0, instance:carcheck.testcases.vehicleIdentityPageTest@5d76b067]" name="vehicleTestOne" duration-ms="1009" started-at="2021-10-14T23:38:29 BST" data-provider="passRegNumbers" finished-at="2021-10-14T23:38:30 BST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[BW57BOW]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:751)
+at org.testng.Assert.assertEquals(Assert.java:761)
+at carcheck.testcases.vehicleIdentityPageTest.vehicleTestOne(vehicleIdentityPageTest.java:52)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- vehicleTestOne -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:carcheck.testcases.vehicleIdentityPageTest@5d76b067]" name="teardown" is-config="true" duration-ms="709" started-at="2021-10-14T23:38:30 BST" finished-at="2021-10-14T23:38:30 BST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:carcheck.testcases.vehicleIdentityPageTest@5d76b067]" name="setup" is-config="true" duration-ms="1824" started-at="2021-10-14T23:38:30 BST" finished-at="2021-10-14T23:38:32 BST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="vehicleTestOne(java.lang.String)[pri:0, instance:carcheck.testcases.vehicleIdentityPageTest@5d76b067]" name="vehicleTestOne" duration-ms="908" started-at="2021-10-14T23:38:32 BST" data-provider="passRegNumbers" finished-at="2021-10-14T23:38:33 BST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[KT17DLX]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- vehicleTestOne -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:carcheck.testcases.vehicleIdentityPageTest@5d76b067]" name="teardown" is-config="true" duration-ms="719" started-at="2021-10-14T23:38:33 BST" finished-at="2021-10-14T23:38:34 BST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:carcheck.testcases.vehicleIdentityPageTest@5d76b067]" name="setup" is-config="true" duration-ms="1761" started-at="2021-10-14T23:38:34 BST" finished-at="2021-10-14T23:38:36 BST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="FAIL" signature="vehicleTestOne(java.lang.String)[pri:0, instance:carcheck.testcases.vehicleIdentityPageTest@5d76b067]" name="vehicleTestOne" duration-ms="934" started-at="2021-10-14T23:38:36 BST" data-provider="passRegNumbers" finished-at="2021-10-14T23:38:36 BST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[SG18 HTN]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:751)
+at org.testng.Assert.assertEquals(Assert.java:761)
+at carcheck.testcases.vehicleIdentityPageTest.vehicleTestOne(vehicleIdentityPageTest.java:52)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- vehicleTestOne -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:carcheck.testcases.vehicleIdentityPageTest@5d76b067]" name="teardown" is-config="true" duration-ms="739" started-at="2021-10-14T23:38:36 BST" finished-at="2021-10-14T23:38:37 BST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- carcheck.testcases.vehicleIdentityPageTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
