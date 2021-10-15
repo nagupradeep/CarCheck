@@ -36,7 +36,7 @@ public class vehicleIdentityPageTest extends carcheckBase{
 	
 	@DataProvider
 	public static Iterator<String> passRegNumbers(){
-		 ArrayList<String> registrationL = carcheckUtil.readInputFile();		 
+		 ArrayList<String> registrationL = carcheckUtil.readInputFile("Input");		 
 		 return registrationL.iterator();
 	}
 	
